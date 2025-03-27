@@ -19,3 +19,10 @@ Terraform is a very powerful Infrastructure As A Code Tool which can be managed 
     `https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli#install-terraform`
     
 > Unline ansible/yaml, HCL Terraform is not indendation specific. But for look and feel, we make sure to follow the standard spacing
+
+How EC2 instance can authorize to AWS Cloud and provision resources ?
+    1) We will provision an IAM Role for EC2 service
+    2) Then assign the needed roles to the provisioned IAM Roles ( Full Access )
+    3) We are going to attach this to WS / Jenkins 
+    
+    From now, your WS will have needed authorization to AWS Cloud.
