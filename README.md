@@ -18,3 +18,4 @@ Terraform is a very powerful Infrastructure As A Code Tool which can be managed 
 > How to install terraform ?
     `https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli#install-terraform`
     
+> Unline ansible/yaml, HCL Terraform is not indendation specific. But for look and feel, we make sure to follow the standard spacing
