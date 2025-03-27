@@ -26,3 +26,13 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     3) We are going to attach this to WS / Jenkins 
     
     From now, your WS will have needed authorization to AWS Cloud.
+
+> Terraform Rule Of Thumb:
+    1) If you're using terraform, you need to align provision / update / maintain everything through terraform only.
+    2) Manual changes should not be tolerated.
+    3) Even if someone does some changes manaully on a terraform provisioned resource, we need to import to terraform. 
+
+> What is terraform drift ?
+    1) When a resource is managed by terraform, if you wish to do the changes to that we only do it via tf code
+    2) Doing changes directly from the console, will cause difference in what we have on code vs what is the current from
+    3) This causes drift.
