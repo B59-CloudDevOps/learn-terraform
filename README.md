@@ -36,3 +36,8 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     1) When a resource is managed by terraform, if you wish to do the changes to that we only do it via tf code
     2) Doing changes directly from the console, will cause difference in what we have on code vs what is the current from
     3) This causes drift.
+
+> Is terraform apply disruptive? 
+    1) Based on the type of change
+    2) If you're changing tags or changeing roles, it's happens without any downtime
+    3) If you're changing instance_type, it's disruptive, involves downtime
