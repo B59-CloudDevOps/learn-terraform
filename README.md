@@ -37,7 +37,8 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     2) Doing changes directly from the console, will cause difference in what we have on code vs what is the current from
     3) This causes drift.
 
-> Is terraform apply disruptive? 
+> Is terraform apply disruptive or destructive or concurrent? 
     1) Based on the type of change
     2) If you're changing tags or changeing roles, it's happens without any downtime
-    3) If you're changing instance_type, it's disruptive, involves downtime
+    3) If you're changing instance_type, it's disruptive, involves downtime.
+    4) If you're changing the ami, then it's destructive and then it creates.
