@@ -42,3 +42,5 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     2) If you're changing tags or changeing roles, it's happens without any downtime
     3) If you're changing instance_type, it's disruptive, involves downtime.
     4) If you're changing the ami, then it's destructive and then it creates.
+
+> Speak more about: argument vs attribute
