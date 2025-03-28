@@ -17,10 +17,9 @@ fruits = {
   }
 
   blackberry = {
-
-    taste    = "lite-sweet"
-    price    = 50
-    quantity = "grams"
-    color    = "black"
+    color  = "black"
+    taste  = "lite-sweet"
+    price  = 50
+    metric = "grams"
   }
 }
