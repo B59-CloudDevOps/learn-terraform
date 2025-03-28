@@ -36,6 +36,7 @@ output "sample_op_x" {
 
 # Map Variable
 variable "sample_map" {
+  description = "Sample map variable"
   default = {
     name       = "Mike",
     type       = "DevOps",
