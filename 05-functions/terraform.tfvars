@@ -6,6 +6,7 @@ fruits = {
     taste  = "sweet"
     price  = 10
     metric = "count"
+    state  = "Telangana"
   }
 
   grapes = {
