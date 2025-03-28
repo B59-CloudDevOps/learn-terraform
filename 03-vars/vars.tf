@@ -16,3 +16,16 @@ output "op" {   # This is how you print an output variable
 output "op_x" {
   value = "Value of a is ${var.a}"
 }
+
+# List variable 
+variable "sample_list" {
+  default = [
+    300,
+    "terraform",
+    true
+  ]
+}
+
+output "sample_op" {
+  value = var.sample_list
+}

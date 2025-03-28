@@ -60,6 +60,11 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
         # 2) Boolents 
         # 3) Strings
 
+> Variables are of 3 types: 
+    1) Regular variable, a key with a single value. 
+    2) List variable, a key with multiple values.
+    3) Map variable, a key with multiple key value pairds
+
 > Outputs:
     1) They play an important role in terraform
     2) Outputs are used to print something
