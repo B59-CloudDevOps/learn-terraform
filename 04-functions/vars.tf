@@ -14,5 +14,7 @@ output "grapes_op_x" {
 }
 
 output "blackberry_op_x" {
-  value = "Blackberries are ${var.fruits["blackberry"]["color"]} in color and its taste is ${var.fruits["blackberry"]["taste"]} and its price is ${var.fruits["blackberry"]["price"]} per ${var.fruits["blackberry"]["metric"]}"
+  value = "Blackberries are ${var.fruits["blackberry"]["color"]} in color and its taste is ${var.fruits["blackberry"]["taste"]} and its price is ${var.fruits["blackberry"]["price"]} per ${var.fruits["blackberry"]["metric"]} and their country of origin is ${var.fruits["blackberry"]["country"]}"
 }
+
+# What will when you attempt to access a property that's not defined
