@@ -14,7 +14,6 @@ fruits = {
     taste  = "high-sweet"
     metric = "kg"
     price  = 100
-
   }
 
   blackberry = {
