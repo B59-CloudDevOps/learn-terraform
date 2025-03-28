@@ -63,5 +63,5 @@ output "state_op" {
 
 variable "environment" {}
 output "environment_op" {
-  value = var.environment
+  value = "Current environment is ${var.environment}"
 }
