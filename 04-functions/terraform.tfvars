@@ -11,14 +11,16 @@ fruits = {
   grapes = {
     color  = "green"
     taste  = "high-sweet"
-    price  = 100
     metric = "kg"
+    price  = 100
+
   }
 
   blackberry = {
-    color    = "black"
+
     taste    = "lite-sweet"
     price    = 50
     quantity = "grams"
+    color    = "black"
   }
 }
