@@ -1,5 +1,5 @@
 # If you're having data of multitple types, you can use map of maps 
-
+# Declare input with map of maps for the variable fruits
 fruits = {
   apple = {
     color  = "red"
