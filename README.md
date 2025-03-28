@@ -51,3 +51,16 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     4) If you're changing the ami, then it's destructive and then it creates.
 
 > Speak more about: argument vs attribute
+
+> Variables in terraform: 
+    This is the most interesting and tricky concept that's going to make code dry and parameterize the code: 
+
+    # Supported datatypes in terraform
+        # 1) Numbers 
+        # 2) Boolents 
+        # 3) Strings
+
+> Outputs:
+    1) They play an important role in terraform
+    2) Outputs are used to print something
+    3) They are also used to share the information between terraform modules.
