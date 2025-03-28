@@ -52,3 +52,11 @@ output "sample_map_op" {
 output "sample_map_op_x" {
   value = "${var.sample_map["name"]} is a ${var.sample_map["type"]} engineer and his salary is ${var.sample_map["salary"]}"
 }
+
+# Accessing a variable from a file.  
+# If you want access a variable, you need to declare the emoty variable file 
+variable "state" {}
+
+output "state" {
+  value = var.state
+}
