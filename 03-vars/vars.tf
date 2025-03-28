@@ -42,6 +42,6 @@ variable "sample_map" {
     salary = 10000
   }
 }
-output "sample_op" {
+output "sample_map_op" {
   value = var.sample_map
 }
