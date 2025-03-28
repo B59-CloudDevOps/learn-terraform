@@ -42,6 +42,11 @@ variable "sample_map" {
     salary = 10000
   }
 }
+
 output "sample_map_op" {
   value = var.sample_map
+}
+
+output "sample_map_op_x" {
+  value = "${var.sample_map["name"]} is a ${var.sample_map["type"]} engineer and his salary is ${var.sample_map["salary"]}"
 }
