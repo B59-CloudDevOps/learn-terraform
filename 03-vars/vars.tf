@@ -57,6 +57,6 @@ output "sample_map_op_x" {
 # If you want access a variable, you need to declare the emoty variable file 
 variable "state" {}
 
-output "state" {
+output "state_op" {
   value = var.state
 }
