@@ -12,3 +12,7 @@ variable "a" {
 output "op" {   # This is how you print an output variable
   value = var.a # This is how we can access a variable
 }
+
+output "op_x" {
+  value = "Value of a is ${var.a}"
+}

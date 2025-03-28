@@ -64,3 +64,7 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     1) They play an important role in terraform
     2) Outputs are used to print something
     3) They are also used to share the information between terraform modules.
+
+Naming Standards:
+    1) Either use lowerCase letters with _ or - only
+    2) follow camelCase 
