@@ -1,2 +1,2 @@
-state = "AndhraPradesh"
-
+state       = "AndhraPradesh"
+environment = "terraform"
