@@ -1,5 +1,12 @@
 # learn-terraform
 
+<!-- NFR -->
+Non-Functional Requirements ( NFR )
+    > Code Should Be Dry.
+    > Credentials should not be hardcoded.
+    > Re-run of the script should not fail.
+    > Code should be multi-environment compatible.
+
 Terraform is a very powerful Infrastructure As A Code Tool which can be managed via HCL ( Hashicorp Language )
 
 > Points to be noted when dealing terraform!!!
