@@ -60,3 +60,8 @@ variable "state" {}
 output "state_op" {
   value = var.state
 }
+
+variable "environment" {}
+output "environment_op" {
+  value = var.environment
+}

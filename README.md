@@ -78,3 +78,9 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
 Naming Standards:
     1) Either use lowerCase letters with _ or - only
     2) follow camelCase 
+
+
+What is terraform.tfvars ?
+    > This is a file that holds all the default values that needs to be used irrespective of the environment.
+    > When you delcare the variable values in this file, you don't have to explicitly mention this file as terraform picks "terraform.tfvars" by default
+    > When you declare some value in dev.tfvars, qa.tfvars, prod.tfvars, then while running terraform commands, we need to mention that file
