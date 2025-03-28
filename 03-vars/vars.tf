@@ -20,7 +20,7 @@ output "op_x" {
 # List variable 
 variable "sample_list" {
   default = [
-    300,
+    5000,
     "terraform",
     true
   ]
@@ -28,4 +28,8 @@ variable "sample_list" {
 
 output "sample_op" {
   value = var.sample_list
+}
+
+output "sample_op_x" {
+  value = "${var.sample_list[1]} is a popular IAC Tool and it supports more than ${var.sample_list[0]} providers and its ${var.sample_list[2]} "
 }
