@@ -22,7 +22,7 @@ variable "sample_list" {
   default = [
     "terraform",
     true,
-    5000
+    5000,
   ]
 }
 
@@ -34,4 +34,14 @@ output "sample_op_x" {
   value = "${var.sample_list[1]} is a popular IAC Tool and it supports more than ${var.sample_list[0]} providers and its ${var.sample_list[2]} "
 }
 
-# Map Varianle
+# Map Variable
+variable "sample_map" {
+  default = {
+    name   = "Mike",
+    type   = "DevOps",
+    salary = 10000
+  }
+}
+output "sample_op" {
+  value = var.sample_map
+}
