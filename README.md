@@ -56,9 +56,12 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     This is the most interesting and tricky concept that's going to make code dry and parameterize the code: 
 
     # Supported datatypes in terraform
-        # 1) Numbers 
-        # 2) Boolents 
-        # 3) Strings
+        # 1) Numbers  - No need to enclose them in quotes
+        # 2) Boolents - No need to enclose them in quotes
+        # 3) Strings - Need to enclose them in quotes ( Only double quotes. )
+
+        Note: 
+            In terraform, there is no concept of single quotes.
 
 > Variables are of 3 types: 
     1) Regular variable, a key with a single value. 
@@ -84,3 +87,12 @@ What is terraform.tfvars ?
     > This is a file that holds all the default values that needs to be used irrespective of the environment.
     > When you delcare the variable values in this file, you don't have to explicitly mention this file as terraform picks "terraform.tfvars" by default
     > When you declare some value in dev.tfvars, qa.tfvars, prod.tfvars, then while running terraform commands, we need to mention that file
+
+How to run a tf command that has xyz.tfvas,
+    $ terraform init ; terraform plan --var-file=dev.tfvars 
+
+How to run a tf command that has xyz.tfvas & cli varaibles,
+    $ terraform init ; terraform plan --var-file=dev.tfvars  -var environment=cli
+
+Variable Priority ?
+    cliVariables > ***.tfvars > terraform.tfvars > terraform.auto.tfvars

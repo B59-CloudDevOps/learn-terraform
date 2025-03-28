@@ -54,7 +54,7 @@ output "sample_map_op_x" {
 }
 
 # Accessing a variable from a file.  
-# If you want access a variable, you need to declare the emoty variable file 
+# If you want access a variable, you need to declare the empty variable file 
 variable "state" {}
 
 output "state_op" {
