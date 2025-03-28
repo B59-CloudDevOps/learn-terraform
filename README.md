@@ -65,6 +65,11 @@ How EC2 instance can authorize to AWS Cloud and provision resources ?
     2) List variable, a key with multiple values.
     3) Map variable, a key with multiple key value pairds
 
+```
+    var.sample    : use this only if this is not in between a set of strings 
+    ${var.sample} : use this if your varaible has to be enclosed in a set of strings
+```
+
 > Outputs:
     1) They play an important role in terraform
     2) Outputs are used to print something
