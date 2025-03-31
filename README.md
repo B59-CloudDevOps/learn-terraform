@@ -96,3 +96,7 @@ How to run a tf command that has xyz.tfvas & cli varaibles,
 
 Variable Priority ?
     cliVariables > ***.tfvars > terraform.tfvars > terraform.auto.tfvars
+
+IMP Points to consider: 
+> When you use count, you'd be using "count.index"
+> If you're using for_each, you'd get  each.key , each.value 
