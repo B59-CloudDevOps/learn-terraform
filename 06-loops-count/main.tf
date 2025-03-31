@@ -3,7 +3,7 @@ resource "null_resource" "main" {
 }
 
 variable "fruits" {
-  default = ["strawberry", "grapes", "apple", ]
+  default = ["pineapple", "strawberry", "grapes", "apple"]
 }
 
 resource "null_resource" "this" {
