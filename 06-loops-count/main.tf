@@ -2,10 +2,10 @@ resource "null_resource" "main" {
   count = 3
 }
 
-variable "fruits" {
-  default = ["pineapple", "strawberry", "grapes", "apple"]
+variable "veggies" {
+  default = ["carrot", "cucumber"]
 }
 
 resource "null_resource" "this" {
-  count = length(var.fruits)
+  count = length(var.veggies)
 }
