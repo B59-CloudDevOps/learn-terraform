@@ -12,13 +12,13 @@ variable "fruits" {
       price  = 200
       metric = "kg"
     }
-    blackberry = {
-      color   = "black"
-      taste   = "sweet"
-      price   = 300
-      metric  = "kg"
-      country = "India"
-    }
+    # blackberry = {
+    #   color   = "black"
+    #   taste   = "sweet"
+    #   price   = 300
+    #   metric  = "kg"
+    #   country = "India"
+    # }
   }
 }
 
