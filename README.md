@@ -100,3 +100,12 @@ Variable Priority ?
 IMP Points to consider: 
 > When you use count, you'd be using "count.index"
 > If you're using for_each, you'd get  each.key , each.value 
+
+> When we learn anything, we keep on applying the 4 principles 
+
+```
+    1) Conditions 
+    2) Variables
+    3) Functions 
+    4) Loops 
+```
