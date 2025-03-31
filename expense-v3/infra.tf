@@ -13,6 +13,10 @@ variable "componets" {
       instance_type = "t2.micro"
       ami           = "ami-0fcc78c828f981df2"
     }
+    tracking = {
+      instance_type = "t2.nano"
+      ami           = "ami-0fcc78c828f981df2"
+    }
   }
 }
 resource "aws_instance" "main" {
