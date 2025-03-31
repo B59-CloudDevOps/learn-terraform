@@ -14,8 +14,8 @@ variable "componets" {
       ami           = "ami-0fcc78c828f981df2"
     }
     tracking = {
-      # instance_type = "t2.nano"
-      ami = "ami-0fcc78c828f981df2"
+      instance_type = ""
+      ami           = "ami-0fcc78c828f981df2"
     }
   }
 }
