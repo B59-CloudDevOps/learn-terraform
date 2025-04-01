@@ -16,6 +16,6 @@ data "aws_ami" "main" {
   }
 }
 
-# output "sg" {
-#   value = data.aws_security_group.main.id
-# }
+output "ami" {
+  value = data.aws_ami.main.id
+}
