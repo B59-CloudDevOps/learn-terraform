@@ -109,3 +109,11 @@ IMP Points to consider:
     3) Functions 
     4) Loops 
 ```
+
+Modules In Terraform:   
+    1) They help in keeping code DRY 
+    2) And at the same time, code can be re-used. 
+
+Modules In Terraform are of 2 types: 
+    1) Terraform registry modules ( readdily available )
+    2) Bulding your own modules

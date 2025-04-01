@@ -1,6 +1,5 @@
 variable "componets" {
   default = ["frontend", "backend", "mysql"]
-
 }
 resource "aws_instance" "main" {
   count                  = length(var.componets)
