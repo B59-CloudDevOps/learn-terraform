@@ -7,6 +7,15 @@ data "aws_security_group" "main" {
   name = "b59-allow-all"
 }
 
+data "aws_ami" "main" {
+  most_recent = true
+
+  owners = ["355449129696"]
+  tags = {
+    Name = "DevOps-LabImage-RHEL9"
+  }
+}
+
 # output "sg" {
 #   value = data.aws_security_group.main.id
 # }
