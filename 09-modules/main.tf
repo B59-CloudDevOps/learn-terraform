@@ -3,3 +3,6 @@ module "sample" {
   fruits = var.fruits
 }
 
+variable "fruits" {
+  default = ["apple", "banana", "orange"]
+}
