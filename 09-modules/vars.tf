@@ -1,3 +1,1 @@
-variable "fruits" {
-  default = ["apple", "banana", "orange"]
-}
+variable "fruits" {}
