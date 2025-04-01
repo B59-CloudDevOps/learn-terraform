@@ -117,3 +117,28 @@ Modules In Terraform:
 Modules In Terraform are of 2 types: 
     1) Terraform registry modules ( readdily available )
     2) Bulding your own modules
+
+`Terraform init is going to do 3 things`
+    1) Initialized the `backend`
+    2) Downloads the needed plugings
+    3) Initializes the modules
+
+Modules:    
+    1) Root Modules : From where you run the terraform commands
+    2) Child Module: The actual code 
+
+    Passing information between 2 child modules, cannot be done directly. It would be through root module
+
+        "x-module ---> RootModule ---> y-module"
+    Information from x-module to y-module would be done via rootModule in the form of outputs.
+
+    OUTPUT's play a very important role in passing the information between 2 modules.
+
+
+    > The Root Module
+        Every Terraform configuration has at least one module, known as its root module, which consists of the resources defined in the .tf files in the main working directory.
+
+    > Child Modules
+        A Terraform module (usually the root module of a configuration) can call other modules to include their resources into the configuration. A module that has been called by another module is often referred to as a child module.
+
+        Child modules can be called multiple times within the same configuration, and multiple configurations can use the same child module.
