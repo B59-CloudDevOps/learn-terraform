@@ -158,3 +158,11 @@ Modules:
 > How to retrieve the info from backend module to the root ? 
     And that's where output comes up from.
         1) Declare the needed item to be passed to root or another module as output and then supply as an input
+    
+> Argument vs Attrubute In terraform
+
+    Argument:
+        1) Properties needed to provision resource ( like instance_type, disk_size)
+    
+    Attributes:
+        1) Properties that comes up after the provisioning of resources ( Like private_ip, instance_id, arn )
