@@ -154,3 +154,7 @@ Modules:
         2) Define the value for that in the root module
         3) Declare empty variable with the same name 
         4) Then use it in the backend module
+
+> How to retrieve the info from backend module to the root ? 
+    And that's where output comes up from.
+        1) Declare the needed item to be passed to root or another module as output and then supply as an input
