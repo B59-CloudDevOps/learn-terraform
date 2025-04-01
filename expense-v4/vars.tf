@@ -21,7 +21,7 @@ variable "vpc_security_group_ids" {
   default = ["sg-0b37bb6b6f027ffc5"]
 }
 variable "zone_id" {
-  default = "Z08061862LBZAM174JIHO"
+  #   default = "Z08061862LBZAM174JIHO"
 }
 
 variable "env" {}
