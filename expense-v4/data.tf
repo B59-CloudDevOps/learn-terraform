@@ -3,6 +3,10 @@ data "aws_route53_zone" "main" {
   private_zone = false
 }
 
-# output "zone" {
-#   value = data.aws_route53_zone.main.id
-# }
+data "aws_security_group" "main" {
+  name = "b59-allow-all"
+}
+
+output "sg" {
+  value = aws_security_group.main
+}
