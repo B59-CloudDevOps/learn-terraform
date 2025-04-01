@@ -166,3 +166,7 @@ Modules:
     
     Attributes:
         1) Properties that comes up after the provisioning of resources ( Like private_ip, instance_id, arn )
+
+> Datasource: 
+        
+        1) Datasource helps in querying the information that's already available 
