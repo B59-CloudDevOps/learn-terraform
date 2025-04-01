@@ -8,5 +8,5 @@ data "aws_security_group" "main" {
 }
 
 output "sg" {
-  value = data.aws_security_group.main
+  value = data.aws_security_group.main.id
 }
