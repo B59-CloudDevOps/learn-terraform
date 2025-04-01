@@ -3,3 +3,7 @@ resource "null_resource" "main" {
 }
 
 variable "fruits" {}
+
+output "test" {
+  value = "Hello World"
+}
