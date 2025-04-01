@@ -142,3 +142,15 @@ Modules:
         A Terraform module (usually the root module of a configuration) can call other modules to include their resources into the configuration. A module that has been called by another module is often referred to as a child module.
 
         Child modules can be called multiple times within the same configuration, and multiple configurations can use the same child module.
+
+
+> When using variables in modules:
+
+    Ensure you declare that the same empty variable as well in the module we are calling.
+
+    Rule of thumb, if you're using a variable in root module, that empty variable has to be declared in the child module, before you use and that where the data-transfer will happen. ( that's a way of receiving the data from the root module )
+
+        1) Declare the variable in the root module
+        2) Define the value for that in the root module
+        3) Declare empty variable with the same name 
+        4) Then use it in the backend module
