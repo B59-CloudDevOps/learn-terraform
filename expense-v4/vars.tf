@@ -18,5 +18,5 @@ variable "ami" {
 }
 
 variable "vpc_security_group_ids" {
-  default = "sg-0b37bb6b6f027ffc5"
+  default = ["sg-0b37bb6b6f027ffc5"]
 }
