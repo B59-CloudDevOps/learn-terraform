@@ -1,3 +1,7 @@
 module "app" {
-  source = "./app "
+  source                 = "./app"
+  ami                    = ""
+  instance_type          = ""
+  vpc_security_group_ids = ""
+  name                   = ""
 }
