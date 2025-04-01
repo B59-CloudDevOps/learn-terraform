@@ -15,7 +15,3 @@ data "aws_ami" "main" {
     Name = "DevOps-LabImage-RHEL9"
   }
 }
-
-output "ami" {
-  value = data.aws_ami.main.id
-}

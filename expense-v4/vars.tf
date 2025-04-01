@@ -13,9 +13,11 @@ variable "componets" {
   }
 }
 
-variable "ami" {
-  default = "ami-0fcc78c828f981df2"
-}
+variable "env" {}
+
+# variable "ami" {
+#   default = "ami-0fcc78c828f981df2"
+# }
 
 # variable "vpc_security_group_ids" {
 #   default = ["sg-0b37bb6b6f027ffc5"]
@@ -24,4 +26,3 @@ variable "ami" {
 #     default = "Z08061862LBZAM174JIHO"
 # }
 
-variable "env" {}
