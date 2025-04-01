@@ -13,7 +13,7 @@ variable "componets" {
   }
 }
 
-variable "zone_id" {}
+# variable "zone_id" {}
 variable "ami" {
   default = "ami-0fcc78c828f981df2"
 }
