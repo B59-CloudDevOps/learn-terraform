@@ -23,3 +23,7 @@ variable "vpc_security_group_ids" {
 variable "zone_id" {
   default = "Z08061862LBZAM174JIHO"
 }
+
+variable "env" {
+  default = "dev"
+}
