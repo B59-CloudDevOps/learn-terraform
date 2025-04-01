@@ -7,6 +7,6 @@ data "aws_security_group" "main" {
   name = "b59-allow-all"
 }
 
-output "sg" {
-  value = data.aws_security_group.main.id
-}
+# output "sg" {
+#   value = data.aws_security_group.main.id
+# }

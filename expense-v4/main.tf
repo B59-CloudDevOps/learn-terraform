@@ -3,7 +3,7 @@ module "app" {
   source                 = "./app"
   ami                    = var.ami
   instance_type          = each.value["instance_type"]
-  vpc_security_group_ids = var.vpc_security_group_ids
+  vpc_security_group_ids = [data.aws_security_group.main.id]
   name                   = each.key
   zone_id                = data.aws_route53_zone.main.id
   env                    = var.env
