@@ -24,6 +24,4 @@ variable "zone_id" {
   default = "Z08061862LBZAM174JIHO"
 }
 
-variable "env" {
-  default = "dev"
-}
+variable "env" {}
