@@ -181,4 +181,36 @@ Modules:
                 * Provisioners are always create time provisioners, that means they will only be executed on the resource during the creation time only. And when you run this for the second time, provisioners won't be executed.
                 * To make it run all the time, we can use triggers  
               
-H
+> What is terraform state ?
+```
+    Terraform state is a file that keeps track of the infrastructure Terraform manages. 
+    It records resource attributes, dependencies, and metadata. 
+    Terraform uses this state to determine changes needed when applying configurations. 
+    The state file can be stored locally or remotely for collaboration. 
+    Managing state properly is crucial to avoid conflicts and unintended changes.
+```
+
+> When you're running Terraform Plan, what exactly is happening ?
+
+    1) Terraform reads what properties are there for the xyz resources from the state file
+    2) Terraform compiles the *.tf files and then it also validates whether what we have on the code vs what is there on the state file vs what is there on the provisioned infrastructure
+    3) If there is a change, terraform consider what is there on the CODE as the source of truth.
+
+> If you lost the state file, what will happen ?
+    1) Terraform loses track of evertying and technically it's bad event 
+
+> Organizing staefile !!!!
+
+        What will happen if you store the statefile locally on your machine ?
+
+            1) If you store the Terraform state file (terraform.tfstate) locally, the following will happen:
+
+            2) Limited Collaboration – Other team members won’t have access to the latest state, leading to potential conflicts.
+
+            3) Risk of Loss – If the local machine crashes or the file is accidentally deleted, the state is lost.
+
+            4) Security Concerns – Sensitive data (like credentials or secrets) may be stored in the state file, posing a security risk if not encrypted.
+
+            5) Manual Backups Required – You’ll need to manually back up the state file to prevent data loss.
+
+                    Locks Not Available – Without remote state locking (like in Terraform Cloud or S3 + DynamoDB), multiple users running Terraform at the same time may cause conflicts.
