@@ -176,4 +176,8 @@ Modules:
         1) Local Provisioner      : When you want some action to be performed on the machine you're running terraform, then we use local provisioner
         2) Remote Provisoner      : When you want some action to be performed on the you're provisioned, then we use remote provisioner
         3) Connection Provisioner : To perform some action on the top of the newly provisoned machine, you need to enable a connection and that can be done via connection-provisioner
-            > Note: Provisioners should always be with in the resource.
+            > Note: 
+                * Provisioners should always be with in the resource.
+                * Provisioners are always create time provisioners, that means they will only be executed on the resource during the creation time only. And when you run this for the second time, provisioners won't be executed.
+                * To make it run all the time, we can use triggers  
+              

@@ -12,7 +12,7 @@ resource "aws_instance" "main" {
 resource "null_resource" "main" {
   depends_on = [aws_route53_record.main] # This ensure, provisioner will only be exectued post dns_record creation
   provisioner "local-exec" {
-    command = "sleep 10 ;  cd /home/ec2-user/learn-ansible/; ansible-playbook -i ${aws_instance.main.private_ip},  -e ansible_user=ec2-user -e ansible_password=DevOps321 -e env=${var.env} -e component=${var.name} expense.yaml"
+    command = "sleep 10 ;  cd /home/ec2-user/learn-ansible/; ansible-playbook -i inv-${env}  -e ansible_user=ec2-user -e ansible_password=DevOps321 -e env=${var.env} -e component=${var.name} expense.yaml"
   }
 }
 
