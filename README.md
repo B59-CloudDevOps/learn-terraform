@@ -228,3 +228,8 @@ Modules:
     1) Initialize the backed
     2) Initialize the plugins
     3) Initialize the modules 
+
+> How to initialize the terraform code that has backend's config define in a separate file
+    $ terraform init  -backend-config=env-dev/state.tfvars -var-file=env-dev/main.tfvars; 
+    $ terraform plan -var-file=env-dev/main.tfvars 
+    $ terraform apply -var-file=env-dev/main.tfvars -auto-approve
