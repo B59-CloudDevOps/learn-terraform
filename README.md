@@ -242,3 +242,11 @@ Modules:
     $ terraform plan -var-file=env-dev/main.tfvars 
     $ terraform apply -var-file=env-dev/main.tfvars -auto-approve
 ```
+
+> How do we organize the terraform code ?
+
+    1) We will maintain all the child modules in a separate repo ( tf-module-app/ : backend module)
+    2) Root module in a separate repo  (expense-terraform/: root module)
+
+        
+       
