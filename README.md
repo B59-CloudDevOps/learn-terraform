@@ -222,6 +222,7 @@ Modules:
     4) Ensure verisoning is enabled on S3.
 
 > When you have multiple environments, then organizing state is very important. 
+    We can supply the backend config in separate files , refer 12-remote-state-multi-env/
 
 > What Terraform Init Does ?
     1) Initialize the backed
