@@ -220,3 +220,10 @@ Modules:
     2) Make sure, we use Enryption Keys to enrypt the data on S3 bucket
     3) Also ensure, very limited ppl have write access to the bucket 
     4) Ensure verisoning is enabled on S3.
+
+> When you have multiple environments, then organizing state is very important. 
+
+> What Terraform Init Does ?
+    1) Initialize the backed
+    2) Initialize the plugins
+    3) Initialize the modules 
