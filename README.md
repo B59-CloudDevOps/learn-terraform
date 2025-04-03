@@ -210,7 +210,13 @@ Modules:
             3) Risk of Loss – If the local machine crashes or the file is accidentally deleted, the state is lost.
 
             4) Security Concerns – Sensitive data (like credentials or secrets) may be stored in the state file, posing a security risk if not encrypted.
-
             5) Manual Backups Required – You’ll need to manually back up the state file to prevent data loss.
 
                     Locks Not Available – Without remote state locking (like in Terraform Cloud or S3 + DynamoDB), multiple users running Terraform at the same time may cause conflicts.
+
+> We should also have a strategy to organize the state in a secure and reliable approach
+
+    1) If you're using opensource terraform and on AWS, we can organize them on S3 Buckets
+    2) Make sure, we use Enryption Keys to enrypt the data on S3 bucket
+    3) Also ensure, very limited ppl have write access to the bucket 
+    4) Ensure verisoning is enabled on S3.
