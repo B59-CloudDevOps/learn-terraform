@@ -191,16 +191,19 @@ Modules:
 ```
 
 > When you're running Terraform Plan, what exactly is happening ?
-
+```
     1) Terraform reads what properties are there for the xyz resources from the state file
     2) Terraform compiles the *.tf files and then it also validates whether what we have on the code vs what is there on the state file vs what is there on the provisioned infrastructure
     3) If there is a change, terraform consider what is there on the CODE as the source of truth.
+```
 
 > If you lost the state file, what will happen ?
-    1) Terraform loses track of evertying and technically it's bad event 
+
+    ``` 1) Terraform loses track of evertying and technically it's bad event ```
 
 > Organizing staefile !!!!
 
+```
         What will happen if you store the statefile locally on your machine ?
 
             1) If you store the Terraform state file (terraform.tfstate) locally, the following will happen:
@@ -213,23 +216,29 @@ Modules:
             5) Manual Backups Required – You’ll need to manually back up the state file to prevent data loss.
 
                     Locks Not Available – Without remote state locking (like in Terraform Cloud or S3 + DynamoDB), multiple users running Terraform at the same time may cause conflicts.
+```
 
 > We should also have a strategy to organize the state in a secure and reliable approach
-
+```
     1) If you're using opensource terraform and on AWS, we can organize them on S3 Buckets
     2) Make sure, we use Enryption Keys to enrypt the data on S3 bucket
     3) Also ensure, very limited ppl have write access to the bucket 
     4) Ensure verisoning is enabled on S3.
+```
 
 > When you have multiple environments, then organizing state is very important. 
-    We can supply the backend config in separate files , refer 12-remote-state-multi-env/
+    `We can supply the backend config in separate files , refer 12-remote-state-multi-env/`
 
 > What Terraform Init Does ?
+```
     1) Initialize the backed
     2) Initialize the plugins
     3) Initialize the modules 
+```
 
 > How to initialize the terraform code that has backend's config define in a separate file
+```
     $ terraform init  -backend-config=env-dev/state.tfvars -var-file=env-dev/main.tfvars; 
     $ terraform plan -var-file=env-dev/main.tfvars 
     $ terraform apply -var-file=env-dev/main.tfvars -auto-approve
+```
