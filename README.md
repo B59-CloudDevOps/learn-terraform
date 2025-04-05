@@ -248,5 +248,16 @@ Modules:
     1) We will maintain all the child modules in a separate repo ( tf-module-app/ : backend module)
     2) Root module in a separate repo  (expense-terraform/: root module)
 
-        
-       
+# expense-terraform
+
+This is the root module for the expense-app infrastructure
+
+Code Style:
+    1) terraform fmt --recursive 
+    2) terraform validate  ( This validates whether your code is valid or not )
+
+> Make sure to create an ami in your account using this as image "DevOps-LabImage-RHEL9" as the base image
+Steps:
+    1) Create machine using this lab image "DevOps-LabImage-RHEL9"
+    2) Install ansible on this instance "pip3.11 install ansible -y"
+    3) Create AMI "b59-learning-ami-with-ansible" ( use this going forward)
